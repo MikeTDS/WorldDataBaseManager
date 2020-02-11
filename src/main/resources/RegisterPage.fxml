@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegisterPanel.RegisterController">
+
+    <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.38" prefHeight="35.0" prefWidth="600.0" text="DataBase Manager 1.0" />
+    <BorderPane prefHeight="200.0" prefWidth="200.0">
+        <center>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+                <children>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="TOP" text="Fill all textfields with your login data to create account." textAlignment="CENTER" wrapText="true" />
+                  </children>
+               </VBox>
+                    <Label text="Login:" />
+                    <TextField fx:id="loginTextField" onAction="#onCreateAccount" onDragEntered="#onCreateAccount" />
+                    <Label text="Password:" />
+                    <PasswordField fx:id="loginPasswordField" onAction="#onCreateAccount" onDragEntered="#onCreateAccount" />
+                    <Button fx:id="createAccountButton" mnemonicParsing="false" onAction="#onCreateAccount" onDragEntered="#onCreateAccount" text="Create Account" />
+                </children>
+                <padding>
+                    <Insets left="20.0" right="20.0" />
+                </padding>
+            </VBox>
+        </center>
+    </BorderPane>
+
+</VBox>

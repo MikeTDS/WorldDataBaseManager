@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="AppPanel.AppController">
+
+    <Label alignment="CENTER" contentDisplay="CENTER" opacity="0.38" prefHeight="35.0" prefWidth="600.0" text="DataBase Manager 1.0" />
+   <VBox alignment="TOP_CENTER" prefHeight="359.0" prefWidth="600.0">
+      <children>
+         <HBox prefHeight="346.0" prefWidth="600.0" />
+         <HBox alignment="CENTER_RIGHT" prefHeight="40.0" prefWidth="600.0">
+            <children>
+               <Button fx:id="logOutButton" mnemonicParsing="false" onAction="#onLogOut" prefHeight="25.0" prefWidth="73.0" text="Log out" />
+            </children>
+         </HBox>
+      </children>
+   </VBox>
+
+</VBox>
